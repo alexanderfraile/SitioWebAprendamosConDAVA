@@ -1,0 +1,116 @@
+/* fuentes de google */
+@import url("https://fonts.google.com/specimen/Bonheur+Royale");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container span {
+  font-size: 62pt;
+  font-weight: bold;
+  position: relative;
+  font-family: "Bonheur+Royale";
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.container span::before {
+  content: var(--l);
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(15px);
+}
+.container span::after {
+  content: var(--l);
+  position: absolute;
+  height: 90%;
+  width: 180px;
+  top: 60%;
+  left: 0;
+  filter: blur(30px);
+  transform: rotateX(50deg);
+}
+.container span:hover {
+  filter: contrast(250%);
+}
+.container span:nth-child(1) {
+  color: #ffffff;
+  border-color: blue;
+}
+.container span:nth-child(2) {
+  color: #ffffff;
+}
+.container span:nth-child(3) {
+  color: #ffffff;
+}
+.container span:nth-child(4) {
+  color: #ffffff;
+}
+.container span:nth-child(5) {
+  color: #ffffff;
+}
+
+.container span:nth-child(6) {
+  color: #ffffff;
+}
+.container span:nth-child(7) {
+  color: #ffffff;
+}
+.container span:nth-child(8) {
+  color: #ffffff;
+}
+.container span:nth-child(9) {
+  color: #ffffff;
+}
+.container span:nth-child(10) {
+  color: #ffffff;
+}
+.container span:nth-child(11) {
+  color: #ffffff;
+}
+.container span:nth-child(12) {
+  color: #ffffff;
+}
+.container span:nth-child(13) {
+  color: #ffffff;
+}
+.container span:nth-child(14) {
+  color: #ffffff;
+}
+.container span:nth-child(15) {
+  color: #ffffff;
+}
+.container span:nth-child(16) {
+  color: #ffffff;
+}
+.gradient-text {
+  background-image: linear-gradient(45deg, var(--violet), var(--turquoise));
+  background-color: var(--violet);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+
+gradient-border {
+  animation: gradient 5s linear infinite;
+  background: linear-gradient(100deg, var(--violet) 25%, var(--turquoise) 50%, var(--violet) 75%);
+  background-repeat: repeat;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 5rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: -80rem 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
